@@ -1,0 +1,55 @@
+.response-container {
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px;
+    border-radius: 20px;
+    width: 415px;
+    font-family: 'Tangerine', serif;
+    text-align: center;
+}
+
+.thank-you-image {
+    background-image: url('./../../common/images/illustration-thank-you.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 162px;
+    height: 108px;
+    margin: 0 auto;
+}
+
+.rating-submitted {
+    background: #262E38;
+    border-radius: 22.5px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #FC7614;
+    width: 193px;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 4px;
+}
+
+.heading {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: white;
+    margin-top: 30px;
+}
+
+.description {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #969FAD;
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-top: 20px;
+}

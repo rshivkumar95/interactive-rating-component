@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
+import RatingCard from './components/rating-card/';
+
+import RatingResponse from './components/rating-response';
+
+import "./App.css"
+
 
 function App() {
+
+  const [ isRatingSubmit, setIsRatingSubmitted ] = useState(false);
+
+  const [ submittedRating, setSubmittedRating ] = useState(-1);
+
+  const onRatingSubmitted = (rate : number) => {
+    setSubmittedRating(rate);
+    setIsRatingSubmitted(true);
+  }
+  
+  let ratingConfig = {
+    maxRating : 5,
+    minRating : 1,
+    onRatingSubmitted : onRatingSubmitted
+  };
+
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      { isRatingSubmit ? <RatingResponse rate={submittedRating} maxRating={ratingConfig.maxRating}/> : <RatingCard {...ratingConfig} />}
     </div>
   );
 }

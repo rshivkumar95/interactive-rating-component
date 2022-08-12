@@ -1,0 +1,116 @@
+.rating-card {
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px;
+    border-radius: 20px;
+    width: 415px;
+    font-family: 'Tangerine', serif;
+}
+
+.star {
+    border-radius: 50%;
+    background: rgba(38, 46, 56, 1);
+    height: 48px;
+    width: 48px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.star-icon {
+    background-image: url('./../../common/images/icon-star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.heading {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: white;
+    margin-top: 30px;
+}
+
+.description {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #969FAD;
+    width: 340px;
+    margin: 10px 0;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.rate-number {
+    padding : 10px;
+    width: 50px;
+    height: 50px;
+    background: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    color: #7C8798;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rate-number.active, .rate-number.active:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.rate-number:hover {
+    background: #7C8798;
+    color: white;
+}
+
+.submit-container {
+    margin-top: 30px;
+}
+
+.submit-container button{
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    padding: 13px;
+    border-radius: 23px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.submit-container button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+.submit-container button:disabled{
+    color: #7C8798;
+    background-color: white;
+    cursor: not-allowed;
+}
