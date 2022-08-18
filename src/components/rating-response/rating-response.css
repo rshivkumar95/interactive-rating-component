@@ -5,6 +5,7 @@
     width: 415px;
     font-family: 'Tangerine', serif;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .thank-you-image {
@@ -31,7 +32,7 @@
     padding: 4px;
 }
 
-.heading {
+.resp-heading {
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 700;
@@ -41,15 +42,36 @@
     margin-top: 30px;
 }
 
-.description {
+.resp-description {
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #969FAD;
-    width: 340px;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 10px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .response-container {
+        width: 90%;
+    }
+    .resp-heading {
+        font-size: 24px !important;
+        margin-top: 16px !important;
+    }
+    .resp-description {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+
+    .thank-you-image {
+        width: 144px;
+        height: 96px;
+    }
+    
 }

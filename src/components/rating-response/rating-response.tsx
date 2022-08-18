@@ -9,10 +9,10 @@ const RatingResponse = ( { rate, maxRating } : { rate : number, maxRating : numb
             <div className="rating-submitted">
                 You selected {rate} out of {maxRating}
             </div>
-            <div className="heading">
+            <div className="resp-heading">
                 Thank you!
             </div>
-            <div className="description">
+            <div className="resp-description">
                 We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
             </div>
         </div>
