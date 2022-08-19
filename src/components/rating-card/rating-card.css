@@ -38,7 +38,7 @@
     font-size: 28px;
     line-height: 35px;
     color: white;
-    margin-top: 30px;
+    margin-top: 28px;
 }
 
 .description {
@@ -111,8 +111,6 @@
 }
 
 .submit-container button:disabled{
-    color: #7C8798;
-    background-color: white;
     cursor: not-allowed;
 }
 
